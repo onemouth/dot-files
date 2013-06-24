@@ -1,0 +1,14 @@
+[user]
+	name = Li Ting Tsai
+	email = liting.tsai@delta.com.tw
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	log = auto
+[alias]
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    co = checkout
+    br = branch
+[branch]
+    autosetuprebase = always
