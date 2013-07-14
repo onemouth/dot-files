@@ -7,7 +7,7 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
-
+Bundle 'davidhalter/jedi-vim'
 " My Bundles here:
 "
 " original repos on github
@@ -36,7 +36,6 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
-
 
 
 set grepprg=ack\ --nogroup\ --column\ $*
