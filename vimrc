@@ -17,6 +17,8 @@ Bundle 'gmarik/vundle'
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'a.vim'
+Bundle 'python.vim'
+Bundle 'vim-flake8'
 "Bundle 'FuzzyFinder'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
