@@ -1,3 +1,6 @@
+set grepprg=ack\ --nogroup\ --column\ $*
+set grepformat=%f:%l:%c:%m
+
 syntax on
 set bg=dark
 set nobackup
