@@ -13,8 +13,6 @@ set autoindent
 set smarttab
 set nu
 set expandtab
-map <f9> :Tlist<CR>
-nnoremap <silent> <f8> :NERDTree<CR>
 highlight LineNr ctermfg=grey 
 filetype indent on
 filetype on
