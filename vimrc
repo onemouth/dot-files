@@ -17,6 +17,7 @@ Bundle 'scrooloose/nerdtree'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
+Bundle 'python.vim'
 Bundle 'a.vim'
 Bundle 'vim-flake8'
 "Bundle 'FuzzyFinder'
