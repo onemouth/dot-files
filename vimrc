@@ -8,6 +8,7 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'scrooloose/nerdtree'
 " My Bundles here:
 "
 " original repos on github
@@ -37,7 +38,7 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
-
+nnoremap <silent> <F2> :NERDTreeToggle<CR>
 set grepprg=ack\ --nogroup\ --column\ $*
 set grepformat=%f:%l:%c:%m
 
