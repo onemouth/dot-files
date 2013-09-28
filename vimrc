@@ -9,6 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'bitc/vim-hdevtools'
 " My Bundles here:
 "
 " original repos on github
@@ -17,7 +18,6 @@ Bundle 'scrooloose/nerdtree'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
-Bundle 'python.vim'
 Bundle 'a.vim'
 Bundle 'vim-flake8'
 Bundle 'taglist.vim'
@@ -50,7 +50,8 @@ let Tlist_Show_One_File=1
 let Tlist_Use_Right_Window=1
 let Tlist_Use_SingleClick=1
 nnoremap <silent> <F3> :TlistToggle<CR>
-
+au FileType haskell nnoremap <buffer> <F4> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F5> :HdevtoolsClear<CR>
 
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 set grepprg=ack\ --nogroup\ --column\ $*
