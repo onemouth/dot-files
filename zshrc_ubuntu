@@ -40,7 +40,7 @@ ZSH_THEME="ys"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump git command-not-found last-working-dir git-extras)
+plugins=(autojump git command-not-found last-working-dir)
 
 source $ZSH/oh-my-zsh.sh
 
