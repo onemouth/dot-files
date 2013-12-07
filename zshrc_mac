@@ -10,10 +10,10 @@ ZSH_THEME="ys"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias rm="rm -i"
-alias ls="ls -GF"
+# alias rm="rm -i"
+# alias ls="ls -GF"
 
-export PATH=$PATH:/usr/local/sbin
+export PATH=/Users/liting/.cabal/bin:$PATH:/usr/local/sbin
 export SVN_EDITOR=vim
 export EDITOR=vim
 # Set to this to use case-sensitive completion
@@ -34,9 +34,13 @@ export EDITOR=vim
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx autojump last-working-dir terminalapp)
+plugins=(git osx autojump last-working-dir terminalapp sublime)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+setopt interactivecomments
+#[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
