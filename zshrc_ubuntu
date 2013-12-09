@@ -27,7 +27,7 @@ ZSH_THEME="ys"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
-# DISABLE_CORRECTION="true"
+DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
@@ -45,6 +45,11 @@ plugins=(gitfast autojump command-not-found last-working-dir per-directory-histo
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+man_vim(){
+    /usr/bin/man $@ | col -b | vim -R -c 'set ft=man nomod nolist' -
+}
+
 export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/liting/.cabal/bin
 
 export PAGER=most
