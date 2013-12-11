@@ -21,6 +21,7 @@ Bundle 'bitc/vim-hdevtools'
 Bundle 'a.vim'
 Bundle 'vim-flake8'
 Bundle 'taglist.vim'
+Bundle 'scrooloose/syntastic'
 "Bundle 'FuzzyFinder'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -74,8 +75,6 @@ endfunction
 nnoremap <silent> <C-k> = :call SetgHdevtools()<CR>
 
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
-set grepprg=ack\ --nogroup\ --column\ $*
-set grepformat=%f:%l:%c:%m
 
 syntax on
 set bg=dark
