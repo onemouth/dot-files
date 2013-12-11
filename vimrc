@@ -19,7 +19,7 @@ Bundle 'bitc/vim-hdevtools'
 "Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'a.vim'
-Bundle 'vim-flake8'
+"Bundle 'vim-flake8'
 Bundle 'taglist.vim'
 Bundle 'scrooloose/syntastic'
 "Bundle 'FuzzyFinder'
