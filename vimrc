@@ -63,7 +63,15 @@ endfunction
 
 let g:hdevtools_options = '-g-ilib -g-isrc -g-i. -g-idist/build/autogen -g-Wall -g-package-conf='.FindCabalSandboxRootPackageConf()
 
+function! SetgHdevtools()
+    if !exists("g:hdevtools_options")
+         let g:hdevtools_options = '-g-ilib -g-isrc -g-i. -g-idist/build/autogen -g-Wall -g-package-conf='.FindCabalSandboxRootPackageConf()
+    else
+        unlet g:hdevtools_options
+    endif
+endfunction
 
+nnoremap <silent> <C-k> = :call SetgHdevtools()<CR>
 
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 set grepprg=ack\ --nogroup\ --column\ $*
