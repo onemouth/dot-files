@@ -107,4 +107,4 @@ hi User4 guifg=#a0ee40 guibg=#222222
 hi User5 guifg=#eeee40 guibg=#222222
 set laststatus=2
 
- 
+set mouse=a 
