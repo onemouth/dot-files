@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bitc/vim-hdevtools'
+Bundle 'vim-scripts/VimClojure'
 " My Bundles here:
 "
 " original repos on github
