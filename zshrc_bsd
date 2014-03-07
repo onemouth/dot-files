@@ -40,15 +40,12 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gitfast z command-not-found last-working-dir per-directory-history)
+plugins=(gitfast z last-working-dir per-directory-history cp)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-man_vim(){
-    /usr/bin/man $@ | col -b | vim -R -c 'set ft=man nomod nolist' -
-}
+export PATH=/usr/home/liting/.cabal/bin:$PATH
 
-export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/liting/.cabal/bin
-
+export PAGER=vimpager
