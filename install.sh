@@ -9,7 +9,7 @@ else
 fi
 
 
-wget -O ~/.gitconfig https://raw.github.com/onemouth/dot-files/master/gitconfig
+#wget -O ~/.gitconfig https://raw.github.com/onemouth/dot-files/master/gitconfig
 wget -O ~/.vimrc https://raw.github.com/onemouth/dot-files/master/vimrc
 
 
