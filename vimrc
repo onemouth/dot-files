@@ -41,6 +41,8 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
+runtime! ftplugin/man.vim
+
 let Tlist_Auto_Highlight_Tag=1
 "let Tlist_Auto_Open=1
 let Tlist_Auto_Update=1
