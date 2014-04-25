@@ -11,23 +11,10 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bitc/vim-hdevtools'
 Bundle 'vim-scripts/VimClojure'
-" My Bundles here:
-"
-" original repos on github
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-rails.git'
-" vim-scripts repos
 Bundle 'a.vim'
-"Bundle 'vim-flake8'
 Bundle 'taglist.vim'
 Bundle 'scrooloose/syntastic'
-"Bundle 'FuzzyFinder'
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (ie. when working on your own plugin)
-"Bundle 'file:///Users/gmarik/path/to/plugin'
+Bundle 'jpalardy/vim-slime'
 " ...
 
 filetype plugin indent on     " required!
@@ -42,6 +29,9 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 
 runtime! ftplugin/man.vim
+
+let g:slime_target = "tmux"
+let g:slime_paste_file = tempname()
 
 let Tlist_Auto_Highlight_Tag=1
 "let Tlist_Auto_Open=1
