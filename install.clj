@@ -1,7 +1,18 @@
 (require '[clojure.java.io :as io]
          '[clojure.string :as string])
 
+(def config "$HOME/.oh-my-zsh")
 (def theme :ys)
+(def case-sensitive true)
+(def disable-auto-update false)
+(def update-zsh-days 13)
+(def disable-ls-colors false)
+(def disable-auto-title false)
+(def disable-correction false)
+(def completion-waiting-dots false)
+(def disable-untracked-files-dirty false)
+(def alias-command {})
+(def export-variable {})
 
 (def zsh-osx-plugins #{:osx :terminalapp :sublime})
 (def zsh-ubuntu-plugins #{:command-not-found})
@@ -26,7 +37,11 @@
  [platform] 
  (let [platform-plugins (or (platform zsh-platform-plugins) #{})]
    (into zsh-common-plugins platform-plugins)))
-   
+
+(defn to-zsh-config
+  [config]
+  (str "ZSH=" config))
+
 (defn to-zsh-theme
   "to zshrc theme command"
   [theme]
@@ -40,8 +55,21 @@
     #_(print str-plugins)
     (str "plugins=(" (string/trim str-plugins) ")")))
 
-;(oh-my-zshrc
-;  {:theme theme
-;   :plugins plugin
-;  }
-;)
+(defn oh-my-zshrc
+  [configs]
+  (let [{:keys [theme config plugins]} configs
+        str-config [(to-zsh-config config)
+                    (to-zsh-theme theme)
+                    (to-zsh-plugins plugins)]
+        ]
+    (string/join "\n\n" str-config)))
+
+(oh-my-zshrc
+  {
+   :config config 
+   :theme theme
+   :plugins (get-zsh-plugins-by-platform (platform?))
+  }
+)
+
+
