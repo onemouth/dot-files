@@ -1,28 +1,6 @@
 (require '[clojure.java.io :as io]
          '[clojure.string :as string])
 
-(def config "$HOME/.oh-my-zsh")
-(def theme :ys)
-(def case-sensitive true)
-(def disable-auto-update false)
-(def update-zsh-days 13)
-(def disable-ls-colors false)
-(def disable-auto-title false)
-(def disable-correction false)
-(def completion-waiting-dots false)
-(def disable-untracked-files-dirty false)
-(def alias-command {})
-(def export-variable {})
-
-(def zsh-osx-plugins #{:osx :terminalapp :sublime})
-(def zsh-ubuntu-plugins #{:command-not-found})
-(def zsh-freebsd-plugins #{})
-(def zsh-common-plugins #{:gitfast :last-working-dir :per-directory-history :cp})
-(def zsh-platform-plugins {:osx zsh-osx-plugins
-                           :ubuntu zsh-ubuntu-plugins
-                           :freebsd zsh-freebsd-plugins
-                           :unknown #{}})
-
 (defn platform?
   "get OS name, can be :osx, :ubuntu, :freebsd, or :unknown"
   []
@@ -45,15 +23,21 @@
 (defn to-zsh-theme
   "to zshrc theme command"
   [theme]
-  (str "ZSH_THEME=" (name theme)))
+  (string/join ["ZSH_THEME=\"" (name theme) "\""]))
 
-(defn to-zsh-plugins
+(defn to-zsh-plugins-worker
   "to zshrc plugins command"
   [plugins]
   (let [add-space #(str %1 " ")
         str-plugins (apply str (map (comp add-space name) (seq plugins)))]
     #_(print str-plugins)
     (str "plugins=(" (string/trim str-plugins) ")")))
+
+(defn to-zsh-plugins
+  [plugins]
+  (if (= plugins :by-platform)
+    (to-zsh-plugins-worker (get-zsh-plugins-by-platform (platform?)))
+    (to-zsh-plugins-worker plugins)))
 
 (defn oh-my-zshrc
   [configs]
@@ -64,12 +48,23 @@
         ]
     (string/join "\n\n" str-config)))
 
+(println
 (oh-my-zshrc
-  {
-   :config config 
-   :theme theme
-   :plugins (get-zsh-plugins-by-platform (platform?))
-  }
+  {:config "$HOME/.oh-my-zsh"                    ;Path to your oh-my-zsh configuration.
+   :theme  :ys                                   ;
+   :case-sensitive true
+   :disable-auto-update false
+   :update-zsh-days 13
+   :disable-auto-title false
+   :disable-correction false
+   :completion-waiting-dots false
+   :disable-untracked-files-dirty false
+   :alias-command {}
+   :export-variable {}
+   :other-commands []
+   :plugins :by-platform})
 )
+
+
 
 
