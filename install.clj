@@ -48,22 +48,29 @@
         ]
     (string/join "\n\n" str-config)))
 
-(println
-(oh-my-zshrc
+(defmacro defoh-my-zshrc
+  [predefined configs]
+  `(oh-my-zshrc configs))
+
+(defoh-my-zshrc
+  {:common-plugins []
+   :osx-plugins []
+   :freebsd-plugins []
+   :ubuntu-plugins []}
   {:config "$HOME/.oh-my-zsh"                    ;Path to your oh-my-zsh configuration.
-   :theme  :ys                                   ;
-   :case-sensitive true
-   :disable-auto-update false
-   :update-zsh-days 13
-   :disable-auto-title false
-   :disable-correction false
-   :completion-waiting-dots false
-   :disable-untracked-files-dirty false
+   :theme  :ys 
+   :miscellany {:case-sensitive true
+                :disable-auto-update false
+                :update-zsh-days 13
+                :disable-auto-title false
+                :disable-correction false
+                :completion-waiting-dots false
+                :disable-untracked-files-dirty false}
    :alias-command {}
    :export-variable {}
    :other-commands []
    :plugins :by-platform})
-)
+
 
 
 
