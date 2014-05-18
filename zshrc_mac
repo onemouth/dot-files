@@ -12,8 +12,7 @@ ZSH_THEME="ys"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias rm="rm -i"
 # alias ls="ls -GF"
-
-export PATH=/Users/liting/.cabal/bin:$PATH:/usr/local/sbin
+export PATH=/usr/local/bin:/usr/local/sbin:/Users/liting/.cabal/bin:$PATH
 export SVN_EDITOR=vim
 export EDITOR=vim
 # Set to this to use case-sensitive completion
