@@ -12,9 +12,11 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'bitc/vim-hdevtools'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'a.vim'
-Bundle 'taglist.vim'
+Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
 Bundle 'jpalardy/vim-slime'
+Bundle 'godlygeek/tabular'
+Bundle "scrooloose/nerdcommenter"
 " ...
 
 filetype plugin indent on     " required!
@@ -33,17 +35,9 @@ runtime! ftplugin/man.vim
 let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
 
-let Tlist_Auto_Highlight_Tag=1
-"let Tlist_Auto_Open=1
-let Tlist_Auto_Update=1
-let Tlist_Display_Tag_Scope=1
-let Tlist_Exit_OnlyWindow=1
-let Tlist_Enable_Dold_Column=1
-let Tlist_File_Fold_Auto_Close=1
-let Tlist_Show_One_File=1
-let Tlist_Use_Right_Window=1
-let Tlist_Use_SingleClick=1
-nnoremap <silent> <F3> :TlistToggle<CR>
+
+nmap <F8> :TagbarToggle<CR>
+
 au FileType haskell nnoremap <buffer> <F4> :HdevtoolsType<CR>
 au FileType haskell nnoremap <buffer> <silent> <F5> :HdevtoolsClear<CR>
 
@@ -65,7 +59,7 @@ function! SetgHdevtools()
     endif
 endfunction
 
-nnoremap <silent> <C-k> = :call SetgHdevtools()<CR>
+nnoremap <silent> <F6> = :call SetgHdevtools()<CR>
 
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 

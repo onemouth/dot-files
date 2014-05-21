@@ -12,9 +12,6 @@ ZSH_THEME="ys"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias rm="rm -i"
 # alias ls="ls -GF"
-export PATH=//Users/liting/.cabal/bin:usr/local/bin:/usr/local/sbin:$PATH
-export SVN_EDITOR=vim
-export EDITOR=vim
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -42,3 +39,6 @@ setopt interactivecomments
 #[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 export PAGER=most
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.cabal/bin:$PATH"
+export SVN_EDITOR=vim
+export EDITOR=vim
