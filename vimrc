@@ -17,6 +17,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'jpalardy/vim-slime'
 Bundle 'godlygeek/tabular'
 Bundle "scrooloose/nerdcommenter"
+Bundle "elixir-lang/vim-elixir"
 " ...
 
 filetype plugin indent on     " required!
