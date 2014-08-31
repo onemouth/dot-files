@@ -39,6 +39,6 @@ setopt interactivecomments
 #[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 export PAGER=most
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.cabal/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.cabal/bin:$PATH"
 export SVN_EDITOR=vim
 export EDITOR=vim
