@@ -36,6 +36,7 @@ runtime! ftplugin/man.vim
 let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
 
+autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 nmap <F8> :TagbarToggle<CR>
 
