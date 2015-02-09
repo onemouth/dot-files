@@ -18,6 +18,7 @@ Bundle 'jpalardy/vim-slime'
 Bundle 'godlygeek/tabular'
 Bundle "scrooloose/nerdcommenter"
 Bundle "elixir-lang/vim-elixir"
+Bundle "vim-scripts/paredit.vim"
 " ...
 
 filetype plugin indent on     " required!
@@ -95,3 +96,5 @@ hi User3 guifg=#ff66ff guibg=#222222
 hi User4 guifg=#a0ee40 guibg=#222222
 hi User5 guifg=#eeee40 guibg=#222222
 set laststatus=2
+
+let mapleader=","
