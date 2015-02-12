@@ -20,10 +20,18 @@ Bundle "elixir-lang/vim-elixir"
 Bundle "bronson/vim-trailing-whitespace"
 Bundle "airblade/vim-gitgutter"
 Bundle "tpope/vim-fugitive"
+Bundle "altercation/vim-colors-solarized"
 " Clojure
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-clojure-static'
+Bundle "tpope/vim-repeat"
 Bundle 'guns/vim-sexp'
+
+set t_Co=256
+syntax enable
+syntax on
+set bg=dark
+colorscheme solarized
 
 autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesActivate
 autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadRound
@@ -96,8 +104,6 @@ nnoremap <silent> <F6> = :call SetgHdevtools()<CR>
 
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
-syntax on
-set bg=dark
 set nobackup
 set nowritebackup
 set noswapfile
