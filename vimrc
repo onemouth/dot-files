@@ -5,12 +5,11 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bitc/vim-hdevtools'
-Bundle 'vim-scripts/VimClojure'
 Bundle 'a.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
@@ -18,8 +17,39 @@ Bundle 'jpalardy/vim-slime'
 Bundle 'godlygeek/tabular'
 Bundle "scrooloose/nerdcommenter"
 Bundle "elixir-lang/vim-elixir"
-Bundle "vim-scripts/paredit.vim"
-" ...
+Bundle "bronson/vim-trailing-whitespace"
+Bundle "airblade/vim-gitgutter"
+Bundle "tpope/vim-fugitive"
+" Clojure
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'guns/vim-clojure-static'
+Bundle 'guns/vim-sexp'
+
+autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesActivate
+autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadRound
+autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadSquare
+autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadBraces
+autocmd BufEnter *.cljs,*.clj,*.cljs.hl setlocal iskeyword+=?,-,*,!,+,/,=,<,>,.,:
+" -- Rainbow parenthesis options
+let g:rbpt_colorpairs = [
+    \ ['darkyellow',  'RoyalBlue3'],
+    \ ['darkgreen',   'SeaGreen3'],
+    \ ['darkcyan',    'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['DarkMagenta', 'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkyellow',  'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['DarkMagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkyellow',  'DarkOrchid3'],
+    \ ['darkred',     'firebrick3'],
+    \ ]
+
 
 filetype plugin indent on     " required!
 "
@@ -78,7 +108,7 @@ set autoindent
 set smarttab
 set nu
 set expandtab
-highlight LineNr ctermfg=grey 
+highlight LineNr ctermfg=grey
 
 set statusline=
 set statusline +=%1*\ %n\ %* "buffer number
@@ -90,11 +120,8 @@ set statusline +=%1*%=%5l%* "current line
 set statusline +=%2*/%L%* "total lines
 set statusline +=%1*%4v\ %* "virtual column number
 set statusline +=%2*0x%04B\ %* "character under cursor
-hi User1 guifg=#eea040 guibg=#222222
-hi User2 guifg=#dd3333 guibg=#222222
-hi User3 guifg=#ff66ff guibg=#222222
-hi User4 guifg=#a0ee40 guibg=#222222
-hi User5 guifg=#eeee40 guibg=#222222
+
 set laststatus=2
 
 let mapleader=","
+
