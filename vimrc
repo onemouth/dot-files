@@ -21,11 +21,14 @@ Bundle "bronson/vim-trailing-whitespace"
 Bundle "airblade/vim-gitgutter"
 Bundle "tpope/vim-fugitive"
 Bundle "altercation/vim-colors-solarized"
+Bundle "pangloss/vim-javascript"
+Bundle "briancollins/vim-jst"
 " Clojure
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-clojure-static'
 Bundle "tpope/vim-repeat"
 Bundle 'guns/vim-sexp'
+
 
 set t_Co=256
 syntax enable
