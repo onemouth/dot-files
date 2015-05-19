@@ -17,3 +17,5 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim +BundleInstall +qall
 
 echo "" > ~/.tmux.conf
+
+sudo pip install flake8
