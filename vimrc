@@ -16,7 +16,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'jpalardy/vim-slime'
 Bundle 'godlygeek/tabular'
 Bundle "scrooloose/nerdcommenter"
-Bundle "elixir-lang/vim-elixir"
 Bundle "bronson/vim-trailing-whitespace"
 Bundle "airblade/vim-gitgutter"
 Bundle "tpope/vim-fugitive"
@@ -26,8 +25,10 @@ Bundle "briancollins/vim-jst"
 " Clojure
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-clojure-static'
-Bundle "tpope/vim-repeat"
 Bundle 'guns/vim-sexp'
+Bundle "tpope/vim-repeat"
+Bundle 'tpope/vim-sexp-mappings-for-regular-people'
+
 
 
 set t_Co=256
