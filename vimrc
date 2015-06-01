@@ -22,6 +22,7 @@ Bundle "tpope/vim-fugitive"
 Bundle "altercation/vim-colors-solarized"
 Bundle "pangloss/vim-javascript"
 Bundle "briancollins/vim-jst"
+Bundle 'christoomey/vim-tmux-navigator'
 " Clojure
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-clojure-static'

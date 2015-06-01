@@ -16,6 +16,7 @@ wget -O ~/.vimrc https://raw.github.com/onemouth/dot-files/master/vimrc
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim +BundleInstall +qall
 
-echo "" > ~/.tmux.conf
+rm -f ~/.tmux.conf
+wget -O ~/.tmux.conf https://raw.github.com/onemouth/dot-files/master/tmux.conf
 
 sudo pip install flake8
