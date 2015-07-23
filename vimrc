@@ -1,36 +1,38 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'bitc/vim-hdevtools'
-Bundle 'a.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'scrooloose/syntastic'
-Bundle 'jpalardy/vim-slime'
-Bundle 'godlygeek/tabular'
-Bundle "scrooloose/nerdcommenter"
-Bundle "bronson/vim-trailing-whitespace"
-Bundle "airblade/vim-gitgutter"
-Bundle "tpope/vim-fugitive"
-Bundle "altercation/vim-colors-solarized"
-Bundle "pangloss/vim-javascript"
-Bundle "briancollins/vim-jst"
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'gmarik/vundle'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bitc/vim-hdevtools'
+Plugin 'a.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/syntastic'
+Plugin 'jpalardy/vim-slime'
+Plugin 'godlygeek/tabular'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'pangloss/vim-javascript'
+Plugin 'briancollins/vim-jst'
+Plugin 'christoomey/vim-tmux-navigator'
 " Clojure
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'guns/vim-clojure-static'
-Bundle 'guns/vim-sexp'
-Bundle "tpope/vim-repeat"
-Bundle 'tpope/vim-sexp-mappings-for-regular-people'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+Plugin 'KabbAmine/zeavim.vim'
 
 
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 set t_Co=256
 syntax enable
@@ -64,7 +66,6 @@ let g:rbpt_colorpairs = [
     \ ]
 
 
-filetype plugin indent on     " required!
 "
 " Brief help
 " :BundleList          - list configured bundles
