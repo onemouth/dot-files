@@ -17,8 +17,13 @@
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;; auto-completion
+     (auto-completion :variables
+                      auto-completion-tab-key-behavior 'cycle
+                      auto-completion-complete-key-sequence "jk"
+                      auto-completion-enable-company-help-tooltip t
+                      )
      ;; better-defaults
+     osx
      emacs-lisp
      git
      (c-c++ :variables c-c++-enable-clang-support t)
@@ -28,6 +33,7 @@
             shell-default-height 30
             shell-default-position 'bottom)
      syntax-checking
+     xkcd
      version-control
      (clojure :variables clojure-enable-fancify-symbols t)
      )
@@ -68,8 +74,8 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-dark
-                         solarized-light
+   dotspacemacs-themes '(solarized-light
+                         solarized-dark
                          spacemacs-light
                          spacemacs-dark
                          leuven
