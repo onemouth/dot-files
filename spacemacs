@@ -85,8 +85,8 @@ before layers configuration."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+   dotspacemacs-default-font '("Hack RegularOblique"
+                               :size 
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -168,7 +168,7 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (setq clojure-enable-fancify-symbols t)
+  (global-set-key (kbd "<f2>") 'clang-format-buffer)
   )
 
 
