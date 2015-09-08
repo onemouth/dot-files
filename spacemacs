@@ -170,7 +170,8 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (global-set-key (kbd "<f2>") 'clang-format-buffer)
+  (global-set-key (kbd "<f3>") 'clang-format-buffer)
+  (global-set-key (kbd "<f2>") 'clang-format-region)
   )
 
 
