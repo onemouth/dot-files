@@ -23,6 +23,7 @@
                       auto-completion-enable-company-help-tooltip t
                       )
      ;; better-defaults
+     eyebrowse
      osx
      emacs-lisp
      git
@@ -88,7 +89,7 @@ before layers configuration."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Hack RegularOblique"
-                               :size 
+                               :size 13
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
