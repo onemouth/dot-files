@@ -29,6 +29,7 @@
      git
      (c-c++ :variables c-c++-enable-clang-support t)
      ;; markdown
+     python
      org
      (shell :variables
             shell-default-height 30
