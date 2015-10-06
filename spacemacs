@@ -24,6 +24,7 @@
                       )
      ;; better-defaults
      eyebrowse
+     (dash :variables dash-helm-dash-docset-path "/home/lt/.local/share/Zeal/Zeal/docsets")
      osx
      emacs-lisp
      git
