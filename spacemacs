@@ -38,6 +38,7 @@
      syntax-checking
      xkcd
      github
+     spell-checking
      version-control
      (clojure :variables clojure-enable-fancify-symbols t)
      )
@@ -169,10 +170,16 @@ before layers configuration."
   ;; User initialization goes here
   )
 
-(defun dotspacemacs/config ()
-  "Configuration function.
+(defun dotspacemacs/user-init ()
+  "Initialization function for user code.
+It is called immediately after `dotspacemacs/init'.  You are free to put any
+user code."
+  )
+
+(defun dotspacemacs/user-config ()
+  "Configuration function for user code.
  This function is called at the very end of Spacemacs initialization after
-layers configuration."
+layers configuration. You are free to put any user code."
   (global-set-key (kbd "<f3>") 'clang-format-buffer)
   (global-set-key (kbd "<f2>") 'clang-format-region)
   )
