@@ -31,6 +31,7 @@
      (c-c++ :variables c-c++-enable-clang-support t)
      ;; markdown
      python
+     javascript
      org
      (shell :variables
             shell-default-height 30
