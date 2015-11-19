@@ -3,7 +3,9 @@
 ;; It must be stored in your home directory.
 
 (defun dotspacemacs/layers ()
-  "Configuration Layers declaration."
+  "Configuration Layers declaration.
+You should not put any user code in this function besides modifying the variable
+values."
   (setq-default
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. `~/.mycontribs/')
@@ -26,6 +28,8 @@
      eyebrowse
      (dash :variables dash-helm-dash-docset-path "/home/lt/.local/share/Zeal/Zeal/docsets")
      osx
+     puppet
+     restclient
      emacs-lisp
      git
      (c-c++ :variables c-c++-enable-clang-support t)
@@ -93,7 +97,7 @@ before layers configuration."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Hack RegularOblique"
-                               :size 13
+                               :size 15
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -177,10 +181,12 @@ It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
   )
 
+
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
  This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+
   (global-set-key (kbd "<f3>") 'clang-format-buffer)
   (global-set-key (kbd "<f2>") 'clang-format-region)
   )
@@ -188,3 +194,16 @@ layers configuration. You are free to put any user code."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(safe-local-variable-values (quote ((flycheck-gcc-language-standard . gnu++11)))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
