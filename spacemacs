@@ -25,7 +25,6 @@ values."
                       auto-completion-enable-company-help-tooltip t
                       )
      ;; better-defaults
-     eyebrowse
      (dash :variables dash-helm-dash-docset-path "/home/lt/.local/share/Zeal/Zeal/docsets")
      osx
      puppet
