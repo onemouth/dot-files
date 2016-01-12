@@ -38,7 +38,7 @@ set t_Co=256
 syntax enable
 syntax on
 set bg=dark
-colorscheme solarized
+"colorscheme solarized
 
 autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesActivate
 autocmd BufEnter *.cljs,*.clj,*.cljs.hl RainbowParenthesesLoadRound
