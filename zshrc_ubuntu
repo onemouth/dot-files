@@ -50,5 +50,5 @@ man_vim(){
     /usr/bin/man $@ | col -b | vim -R -c 'set ft=man nomod nolist' -
 }
 
-export PATH=$PATH:$HOME/bin
+#export PATH=$PATH:$HOME/bin
 
