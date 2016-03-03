@@ -27,12 +27,15 @@ values."
      ;; better-defaults
      (dash :variables dash-helm-dash-docset-path "/home/lt/.local/share/Zeal/Zeal/docsets")
      osx
+     go
      puppet
      restclient
+     better-defaults
+     haskell
      emacs-lisp
      git
      (c-c++ :variables c-c++-enable-clang-support t)
-     ;; markdown
+     markdown
      python
      javascript
      org
@@ -198,7 +201,7 @@ layers configuration. You are free to put any user code."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(safe-local-variable-values (quote ((flycheck-gcc-language-standard . gnu++11)))))
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
