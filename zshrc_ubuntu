@@ -11,7 +11,7 @@ ZSH_THEME="juanghurtado"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias rm="rm -i"
-# alias ls="ls -GF"
+ alias ggst="git status -uno"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -30,7 +30,7 @@ ZSH_THEME="juanghurtado"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gitfast z)
+plugins=(gitfast z cp extract)
 
 source $ZSH/oh-my-zsh.sh
 
