@@ -8,7 +8,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'bitc/vim-hdevtools'
+"Plugin 'bitc/vim-hdevtools'
 Plugin 'a.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
@@ -30,6 +30,8 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 Plugin 'KabbAmine/zeavim.vim'
 
+Plugin 'fatih/vim-go'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -84,27 +86,6 @@ let g:slime_paste_file = tempname()
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 nmap <F8> :TagbarToggle<CR>
-
-au FileType haskell nnoremap <buffer> <F4> :HdevtoolsType<CR>
-au FileType haskell nnoremap <buffer> <silent> <F5> :HdevtoolsClear<CR>
-
-function! FindCabalSandboxRoot()
-    return finddir('.cabal-sandbox', './;')
-endfunction
-
-function! FindCabalSandboxRootPackageConf()
-    return glob(FindCabalSandboxRoot().'/*-packages.conf.d')
-endfunction
-
-let g:hdevtools_options = '-g-ilib -g-isrc -g-i. -g-idist/build/autogen -g-Wall -g-package-conf='.FindCabalSandboxRootPackageConf()
-
-function! SetgHdevtools()
-    if !exists("g:hdevtools_options")
-         let g:hdevtools_options = '-g-ilib -g-isrc -g-i. -g-idist/build/autogen -g-Wall -g-package-conf='.FindCabalSandboxRootPackageConf()
-    else
-        unlet g:hdevtools_options
-    endif
-endfunction
 
 nnoremap <silent> <F6> = :call SetgHdevtools()<CR>
 
