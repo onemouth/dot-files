@@ -18,4 +18,4 @@ vim +PluginInstall +qall
 rm -f ~/.tmux.conf
 wget -O ~/.tmux.conf https://raw.github.com/onemouth/dot-files/master/tmux.conf
 
-sudo pip install flake8
+sudo pip install flake8 percol
