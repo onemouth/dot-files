@@ -30,7 +30,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 Plugin 'KabbAmine/zeavim.vim'
 
-Plugin 'fatih/vim-go'
+" Plugin 'fatih/vim-go'
 Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()            " required
