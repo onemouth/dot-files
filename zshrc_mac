@@ -60,3 +60,5 @@ if exists percol; then
     bindkey '^R' percol_select_history
 fi
 
+eval "$(pyenv init -)"
+
