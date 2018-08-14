@@ -1,6 +1,6 @@
 [user]
 	name = Li-Ting Tsai
-	email = lt.tsai@hopebaytech.com
+	email = lt.tsai@protonmail.com
 [color]
 	diff = auto
 	status = auto
@@ -11,5 +11,3 @@
     co = checkout
     br = branch
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-[branch]
-    autosetuprebase = always
