@@ -30,7 +30,7 @@ ZSH_THEME="juanghurtado"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gitfast osx z cp)
+plugins=(gitfast osx z cp percol)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,22 +43,6 @@ setopt interactivecomments
 export SVN_EDITOR=vim
 export EDITOR=vim
 export TERM=xterm-256color
-
-
-function exists { which $1 &> /dev/null }
-
-if exists percol; then
-    function percol_select_history() {
-        local tac
-        exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
-        BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
-        CURSOR=$#BUFFER         # move cursor
-        zle -R -c               # refresh
-    }
-
-    zle -N percol_select_history
-    bindkey '^R' percol_select_history
-fi
 
 eval "$(pyenv init -)"
 
