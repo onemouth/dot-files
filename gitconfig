@@ -1,13 +1,16 @@
 [user]
-	name = Li-Ting Tsai
-	email = lt.tsai@protonmail.com
+    name = Li-Ting Tsai
+    email = lt.tsai@protonmail.com
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	log = auto
+    diff = auto
+    status = auto
+    branch = auto
+    log = auto
 [alias]
-	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit
     co = checkout
     br = branch
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+[pager]
+    diff = diff-so-fancy | less --tabs=1,5 -RFX
+    show = diff-so-fancy | less --tabs=1,5 -RFX
