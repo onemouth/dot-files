@@ -1,4 +1,20 @@
-dot-files
-=========
+# dot-files
 
-Backup of my dot files
+My dot files
+
+## Prerequisite Packages
+
+* [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+* [percol](https://github.com/mooz/percol)
+* [Vundle](https://github.com/VundleVim/Vundle.vim)
+* [pyenv](https://github.com/pyenv/pyenv)
+
+## Other Must Install CLI Tools
+
+* [ag](https://github.com/ggreer/the_silver_searcher)
+* [fd](https://github.com/sharkdp/fd)
+* [bat](https://github.com/sharkdp/bat)
+* [tldr](https://github.com/tldr-pages/tldr)
+* [entr](http://eradman.com/entrproject/)
+* [tig](https://github.com/jonas/tig)

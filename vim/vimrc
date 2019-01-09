@@ -1,0 +1,60 @@
+" vundle config
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim'
+" jedi-vim - awesome Python autocompletion with VIM
+Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'a.vim'
+"  syntax checking plugin
+Plugin 'scrooloose/syntastic'
+Plugin 'bronson/vim-trailing-whitespace'
+" A Vim plugin which shows a git diff in the gutter
+Plugin 'airblade/vim-gitgutter'
+" fugitive.vim: A Git wrapper so awesome, it should be illegal
+Plugin 'tpope/vim-fugitive'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" my config begin
+set t_Co=256
+syntax enable
+syntax on
+set bg=dark
+
+" for read man page in Vim
+runtime! ftplugin/man.vim
+
+set nobackup
+set nowritebackup
+set noswapfile
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smarttab
+set nu
+set expandtab
+highlight LineNr ctermfg=grey
+
+set statusline=
+set statusline +=%1*\ %n\ %* "buffer number
+set statusline +=%5*%{&ff}%* "file format
+set statusline +=%3*%y%* "file type
+set statusline +=%4*\ %<%F%* "full path
+set statusline +=%2*%m%* "modified flag
+set statusline +=%1*%=%5l%* "current line
+set statusline +=%2*/%L%* "total lines
+set statusline +=%1*%4v\ %* "virtual column number
+set statusline +=%2*0x%04B\ %* "character under cursor
+
+set laststatus=2
+
+let mapleader=","
+
