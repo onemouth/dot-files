@@ -7,8 +7,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
-" jedi-vim - awesome Python autocompletion with VIM
-Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'a.vim'
 "  syntax checking plugin
