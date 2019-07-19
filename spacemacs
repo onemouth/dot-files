@@ -50,9 +50,10 @@ This function should only modify configuration layer settings."
      deft
      restclient
      json
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     go
+     (shell :variables
+             shell-default-height 30
+             shell-default-position 'bottom)
      ;; spell-checking
      ;; syntax-checking
      treemacs
