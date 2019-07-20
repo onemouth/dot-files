@@ -474,6 +474,7 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq deft-directory "~/Dropbox/notes")
   (setq spaceline-org-clock-p t)
+  (setq org-agenda-files '("~/Dropbox/notes"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
