@@ -50,9 +50,10 @@ This function should only modify configuration layer settings."
      deft
      restclient
      json
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     go
+     (shell :variables
+             shell-default-height 30
+             shell-default-position 'bottom)
      ;; spell-checking
      ;; syntax-checking
      treemacs
@@ -475,6 +476,7 @@ before packages are loaded."
   (setq deft-directory "~/Dropbox/notes")
   (setq spaceline-org-clock-p t)
   (setq org-agenda-files '("~/Dropbox/notes"))
+  (setq org-default-notes-file "~/Dropbox/notes/inbox.org")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
