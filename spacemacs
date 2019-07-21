@@ -477,6 +477,8 @@ before packages are loaded."
   (setq spaceline-org-clock-p t)
   (setq org-agenda-files '("~/Dropbox/notes"))
   (setq org-default-notes-file "~/Dropbox/notes/inbox.org")
+  (setq org-todo-keywords
+        '((sequence "TODO" "DOING"  "|" "DONE")))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
