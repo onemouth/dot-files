@@ -51,12 +51,13 @@ This function should only modify configuration layer settings."
      restclient
      json
      go
+     git
+     neotree
      (shell :variables
              shell-default-height 30
              shell-default-position 'bottom)
      ;; spell-checking
      ;; syntax-checking
-     treemacs
      ;; version-control
      )
 
@@ -212,10 +213,6 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-colorize-cursor-according-to-state t
 
    ;; Default font or prioritized list of fonts.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 12.0
-                               :weight normal
-                               :width normal)
 
    ;; The leader key (default "SPC")
    dotspacemacs-leader-key "SPC"
