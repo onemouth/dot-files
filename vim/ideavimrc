@@ -1,0 +1,9 @@
+nnoremap <space>f :action GotoFile<CR>
+nnoremap <space><space> :action GotoAction<CR>
+nnoremap <space>s :action GotoSymbol<CR>
+nnoremap <space>c :action JumpToLastChange<CR>
+nnoremap <space>C :action JumpToNextChange<CR>
+nnoremap <space>e :action GotoPreviousError<CR>
+nnoremap <space>E :action GotoNextError<CR>
+
+nnoremap gD :action GotoImplementation<CR>
