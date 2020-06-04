@@ -1,6 +1,8 @@
-set nocompatible               " be iMproved
+set nocompatible
 set showmode
-set showcmd'
+set showcmd
+set ignorecase
+set smartcase
 
 nnoremap <space>f :action GotoFile<CR>
 nnoremap <space><space> :action SearchEverywhere<CR>
