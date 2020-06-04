@@ -1,3 +1,7 @@
+set nocompatible               " be iMproved
+set showmode
+set showcmd'
+
 nnoremap <space>f :action GotoFile<CR>
 nnoremap <space><space> :action SearchEverywhere<CR>
 nnoremap <space>p :action GotoAction<CR>
@@ -8,3 +12,4 @@ nnoremap <space>e :action GotoPreviousError<CR>
 nnoremap <space>E :action GotoNextError<CR>
 
 nnoremap gD :action GotoImplementation<CR>
+nnoremap gq :action ShowUsages<CR>
