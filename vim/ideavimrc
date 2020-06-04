@@ -1,5 +1,6 @@
 nnoremap <space>f :action GotoFile<CR>
-nnoremap <space><space> :action GotoAction<CR>
+nnoremap <space><space> :action SearchEverywhere<CR>
+nnoremap <space>p :action GotoAction<CR>
 nnoremap <space>s :action GotoSymbol<CR>
 nnoremap <space>c :action JumpToLastChange<CR>
 nnoremap <space>C :action JumpToNextChange<CR>
