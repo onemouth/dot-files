@@ -13,3 +13,4 @@ nnoremap <space>E :action GotoNextError<CR>
 
 nnoremap gD :action GotoImplementation<CR>
 nnoremap gq :action ShowUsages<CR>
+nnoremap gF :action RecentChangedFiles<CR>
