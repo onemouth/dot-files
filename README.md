@@ -5,7 +5,7 @@ My dot files
 ## Prerequisite Packages
 
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-* [percol](https://github.com/mooz/percol)
+* [fzf](https://github.com/junegunn/fzf)
 * [Vundle](https://github.com/VundleVim/Vundle.vim)
 * [pyenv](https://github.com/pyenv/pyenv)
 
