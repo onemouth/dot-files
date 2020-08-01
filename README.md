@@ -4,7 +4,6 @@ My dot files
 
 ## Prerequisite Packages
 
-* [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [percol](https://github.com/mooz/percol)
 * [Vundle](https://github.com/VundleVim/Vundle.vim)
