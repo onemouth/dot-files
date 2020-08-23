@@ -8,6 +8,7 @@ My dot files
 * [fzf](https://github.com/junegunn/fzf)
 * [Vundle](https://github.com/VundleVim/Vundle.vim)
 * [pyenv](https://github.com/pyenv/pyenv)
+* [tpm](https://github.com/tmux-plugins/tpm)
 
 ## Other Must Install CLI Tools
 
@@ -17,3 +18,4 @@ My dot files
 * [tldr](https://github.com/tldr-pages/tldr)
 * [entr](http://eradman.com/entrproject/)
 * [tig](https://github.com/jonas/tig)
+* [interactive-rebase-tool](https://github.com/MitMaro/git-interactive-rebase-tool)
