@@ -51,6 +51,8 @@ This function should only modify configuration layer settings."
      multiple-cursors
      (org :variables
           org-enable-hugo-support t)
+     (ranger :variables
+             ranger-show-preview t)
      deft
      restclient
      json
