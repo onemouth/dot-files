@@ -44,8 +44,8 @@ This function should only modify configuration layer settings."
      ;; better-defaults
      emacs-lisp
      (elfeed :variables
-             rmh-elfeed-org-files (list "~/Dropbox/elfeed.org")
-             elfeed-db-directory "~/Dropbox/elfeeddb")
+             rmh-elfeed-org-files (list "~/Sync/elfeed.org")
+             elfeed-db-directory "~/Sync/elfeeddb")
      helm
      ;; markdown
      multiple-cursors
@@ -476,10 +476,10 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-  (setq deft-directory "~/Dropbox/notes")
+  (setq deft-directory "~/Sync/notes")
   (setq spaceline-org-clock-p t)
-  (setq org-agenda-files '("~/Dropbox/notes"))
-  (setq org-default-notes-file "~/Dropbox/notes/inbox.org")
+  (setq org-agenda-files '("~/Sync/notes"))
+  (setq org-default-notes-file "~/Sync/notes/inbox.org")
   (setq org-todo-keywords
         '((sequence "TODO" "DOING"  "|" "DONE")))
 
