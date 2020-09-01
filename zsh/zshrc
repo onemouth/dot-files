@@ -42,4 +42,3 @@ export TERM=xterm-256color
 
 eval "$(pyenv init -)"
 
-source $GOPATH/src/github.com/17media/api/env.sh
