@@ -19,3 +19,5 @@ My dot files
 * [entr](http://eradman.com/entrproject/)
 * [tig](https://github.com/jonas/tig)
 * [interactive-rebase-tool](https://github.com/MitMaro/git-interactive-rebase-tool)
+* [hub](https://hub.github.com/)
+* [bandwhich](https://github.com/imsnif/bandwhich)
