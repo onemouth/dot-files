@@ -10,10 +10,11 @@
     co = checkout
     br = branch
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-[diff]
-	tool = vimdiff
-[difftool]
-	prompt = false
-[alias]
-    d = difftool 
-
+[sequence]
+	editor = interactive-rebase-tool
+[core]
+    pager = delta --dark
+[delta]
+    side-by-side = true
+    line-numbers = true
+    decorations = true
