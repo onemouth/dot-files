@@ -48,22 +48,22 @@ This function should only modify configuration layer settings."
              elfeed-db-directory "~/Sync/elfeeddb")
      helm
      ;; markdown
-     multiple-cursors
      (org :variables
+          org-enable-roam-support t
           org-enable-hugo-support t)
-     (ranger :variables
-             ranger-show-preview t)
      deft
+     yaml
+     syntax-checking
      restclient
      json
      go
      git
+     yaml
      neotree
      (shell :variables
              shell-default-height 30
              shell-default-position 'bottom)
      ;; spell-checking
-     ;; syntax-checking
      ;; version-control
      )
 
@@ -202,8 +202,7 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-dark
-                         spacemacs-light)
+   dotspacemacs-themes '(default)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
    ;; `all-the-icons', `custom', `doom', `vim-powerline' and `vanilla'. The
