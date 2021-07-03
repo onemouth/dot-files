@@ -54,6 +54,8 @@ This function should only modify configuration layer settings."
      deft
      yaml
      syntax-checking
+     haskell
+     auto-completion
      restclient
      json
      go
