@@ -43,9 +43,6 @@ This function should only modify configuration layer settings."
      ;; auto-completion
      ;; better-defaults
      emacs-lisp
-     (elfeed :variables
-             rmh-elfeed-org-files (list "~/Sync/elfeed.org")
-             elfeed-db-directory "~/Sync/elfeeddb")
      helm
      ;; markdown
      (org :variables
