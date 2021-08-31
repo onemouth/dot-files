@@ -73,7 +73,7 @@ This function should only modify configuration layer settings."
    ;; To use a local version of a package, use the `:location' property:
    ;; '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '(cnfonts)
+   dotspacemacs-additional-packages '(cnfonts anki-editor)
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -475,6 +475,8 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq deft-directory "~/Sync/notes")
+  (setq org-export-global-macros
+        '(("furigana" . "@@html:<ruby> $1<rp>(</rp><rt>$2</rt><rp>)</rp></ruby>@@")))
   (setq spaceline-org-clock-p t)
   (setq org-agenda-files '("~/Sync/notes"))
   (setq org-default-notes-file "~/Sync/notes/inbox.org")
