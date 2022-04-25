@@ -45,10 +45,8 @@ This function should only modify configuration layer settings."
      emacs-lisp
      helm
      ;; markdown
-     (org :variables
-          org-enable-roam-support t
-          org-enable-hugo-support t)
-     deft
+     org
+     (deft :variables deft-zetteldeft t)
      yaml
      syntax-checking
      haskell
