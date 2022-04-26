@@ -473,6 +473,7 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq deft-directory "~/Sync/notes")
+  (setq deft-extensions '("org"))
   (setq org-export-global-macros
         '(("furigana" . "@@html:<ruby> $1<rp>(</rp><rt>$2</rt><rp>)</rp></ruby>@@")))
   (setq spaceline-org-clock-p t)
@@ -480,6 +481,9 @@ before packages are loaded."
   (setq org-default-notes-file "~/Sync/notes/inbox.org")
   (setq org-todo-keywords
         '((sequence "TODO" "DOING"  "|" "DONE")))
+
+  (setq org-pomodoro-play-sounds nil)
+  (setq org-pomodoro-manual-break t)
 
   (require 'cnfonts)
   (cnfonts-enable)
