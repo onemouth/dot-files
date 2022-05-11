@@ -488,6 +488,26 @@ before packages are loaded."
   (require 'cnfonts)
   (cnfonts-enable)
   (cnfonts-set-spacemacs-fallback-fonts)
+
+
+  ; im-select
+  (setq shell-file-name "/bin/bash")
+  (setq lang_source "com.apple.keylayout.ABC")
+  (add-hook 'evil-insert-state-entry-hook
+     (lambda ()
+       (shell-command (concat "im-select " lang_source))))
+
+  (add-hook 'evil-insert-state-exit-hook
+          (lambda ()
+            (shell-command (concat "im-select " lang_source))))
+
+  (add-hook 'evil-replace-state-entry-hook
+            (lambda ()
+              (shell-command (concat "im-select " lang_source))))
+
+  (add-hook 'evil-replace-state-exit-hook
+            (lambda ()
+              (shell-command (concat "im-select " lang_source))))
 )
 
 
