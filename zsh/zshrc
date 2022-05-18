@@ -34,6 +34,7 @@ ZSH_THEME="juanghurtado"
 plugins=(git gitfast macos z cp fzf)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/custom/plugins/forgit/forgit.plugin.zsh
 
 # Customize to your needs...
 setopt interactivecomments
@@ -42,6 +43,7 @@ export EDITOR=vim
 export TERM=xterm-256color
 
 eval "$(pyenv init -)"
+
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
