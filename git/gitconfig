@@ -1,20 +1,14 @@
 [user]
-    useConfigOnly = true
-[color]
-    diff = auto
-    status = auto
-    branch = auto
-    log = auto
-[alias]
-    tree = log --graph --decorate --pretty=oneline --abbrev-commit
-    co = checkout
-    br = branch
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	useConfigOnly = true
 [sequence]
 	editor = interactive-rebase-tool
 [core]
-    pager = delta --dark
+	pager = delta 
 [delta]
-    side-by-side = true
-    line-numbers = true
-    decorations = true
+	navigate = true
+[interactive]
+        diffFilter = delta --color-only ----show-syntax-themes villsau
+[merge]
+        conflictstyle = diff3
+[diff]
+        colorMoved = default
