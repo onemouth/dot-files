@@ -3,11 +3,13 @@
 [sequence]
 	editor = interactive-rebase-tool
 [core]
-	pager = delta 
+	pager = delta --diff-so-fancy
 [delta]
-	navigate = true
+    navigate = true
+    line-numbers = true
+    side-by-side = true
 [interactive]
-        diffFilter = delta --color-only ----show-syntax-themes villsau
+        diffFilter = delta --color-only 
 [merge]
         conflictstyle = diff3
 [diff]

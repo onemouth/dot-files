@@ -31,7 +31,7 @@ ZSH_THEME="juanghurtado"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast macos z cp fzf)
+plugins=(git gitfast macos z cp fzf zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/forgit/forgit.plugin.zsh
@@ -52,4 +52,9 @@ gpgconf --launch gpg-agent
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/liting/.sdkman"
 [[ -s "/Users/liting/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/liting/.sdkman/bin/sdkman-init.sh"
+
+source <(kubectl completion zsh)
+
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1)'$PS1
 
