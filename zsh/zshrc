@@ -31,7 +31,7 @@ ZSH_THEME="juanghurtado"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast macos z cp fzf zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git gitfast macos z cp fzf zsh-autosuggestions zsh-syntax-highlighting kube-ps1)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/forgit/forgit.plugin.zsh
@@ -55,6 +55,4 @@ export SDKMAN_DIR="/Users/liting/.sdkman"
 
 source <(kubectl completion zsh)
 
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-PS1='$(kube_ps1)'$PS1
-
+PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
