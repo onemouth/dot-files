@@ -42,7 +42,7 @@ setopt interactivecomments
 export EDITOR=vim
 export TERM=xterm-256color
 
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 
 #export GPG_TTY=$(tty)
@@ -53,6 +53,6 @@ eval "$(pyenv init -)"
 export SDKMAN_DIR="/Users/liting/.sdkman"
 [[ -s "/Users/liting/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/liting/.sdkman/bin/sdkman-init.sh"
 
-source <(kubectl completion zsh)
+#source <(kubectl completion zsh)
 
-PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
+#PROMPT='$(kube_ps1)'$PROMPT # or RPROMPT='$(kube_ps1)'
